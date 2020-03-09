@@ -1,0 +1,14 @@
+{
+  "generation": [
+    {
+      "templateId": "wysiwygtemplate.quickStart",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Mon, 09 Mar 2020 08:23:26 GMT"
+    },
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationComponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Mon, 09 Mar 2020 08:45:25 GMT"
+    }
+  ]
+}

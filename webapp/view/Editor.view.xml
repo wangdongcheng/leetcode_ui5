@@ -1,0 +1,12 @@
+<mvc:View xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" controllerName="leetcode.controller.Editor">
+	<VBox width="100%" id="__vbox0" alignItems="Center" direction="Column">
+		<items>
+			<Select xmlns="sap.m" forceSelection="false" selectedKey="{/SelectedLeetcode}" autoAdjustWidth="true" items="{ path: '/LeetcodeCollection', sorter: { path: 'LeetcodeID' } }" id="__list">
+				<core:Item key="{LeetcodeID}" text="{LeetcodeID}_{Name}"/>
+			</Select>
+			<TextArea xmlns="sap.m" id="__input" cols="60" rows="6"/>
+			<TextArea xmlns="sap.m" id="__output" cols="60" rows="6" editable="false"/>
+			<Button xmlns="sap.m" press="onSubmit" text="Submit" width="100px" id="__button0" icon="sap-icon://accept"/>
+		</items>
+	</VBox>
+</mvc:View>
