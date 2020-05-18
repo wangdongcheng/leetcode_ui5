@@ -1,5 +1,6 @@
 sap.ui.define(
-	["sap/ui/core/mvc/Controller",
+	[
+		"sap/ui/core/mvc/Controller",
 		"sap/m/MessageToast",
 		"sap/ui/model/json/JSONModel"
 	],
@@ -29,8 +30,8 @@ sap.ui.define(
 				// show a native JavaScript alert
 
 				// var oValue = sap.ui.getCore().byId("__input").getCustomData();
-				var oValue = this.getView().byId("__input").getValue() + this.getView().byId("__list").getSelectedItemId();
-				this.getView().byId("__output").setValue(oValue);
+				var oValue = this.byId("__input").getValue() + this.getView().byId("__list").getSelectedItemId();
+				this.byId("__output").setValue(oValue);
 				MessageToast.show(oValue);
 			}
 		});
